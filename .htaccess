@@ -19,5 +19,5 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^\.]+)$ $1.html [NC, L]
 
 RewriteEngine on
-RewriteCond %{HTTP_HOST} ^yoursite.com 
-RewriteRule (.*) https://www.yoursite.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^raphaeldeux.fr
+RewriteRule (.*) https://www.raphaeldeux.fr/$1 [R=301,L]
