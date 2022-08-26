@@ -2,9 +2,9 @@ html,body{
 	height: 100%;
 }
 body {
-	display : grid;
-	grid-template-rows: auto;
-	height: 100vh;
+	display : flex;
+	flex-direction: column;
+	min-height: 100vh;
 }
 h1{
 	margin-top: 20px;
@@ -47,23 +47,47 @@ a:hover{
   font-size: 30px;
 }
 
+.topublish {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .hero-description h1{
 	font-size:46px;
 
 }
+
 .post-list{
 	width: 40%;
-	margin: 0 auto;
+	margin: auto;
 	padding-top: 40px;
 	padding-bottom: 40px;
-   font-family: 'Radley', serif;
+    font-family: 'Radley', serif;
+	flex-grow: 1;
 }
 .post-list a{
 	color: #000;
 	padding-bottom: 3px;
 }
 .post-list a:hover{
+	border-bottom: #8C8C8C solid 2px;
+	text-decoration: none;
+	color: #8C8C8C;
+}
+
+.post-list-to-publish{
+	width: 40%;
+	margin: auto;
+	padding-top: 40px;
+	padding-bottom: 40px;
+    font-family: 'Radley', serif;
+}
+.post-list-to-publish a{
+	color: #000;
+	padding-bottom: 3px;
+}
+.post-list-to-publish a:hover{
 	border-bottom: #8C8C8C solid 2px;
 	text-decoration: none;
 	color: #8C8C8C;
@@ -98,6 +122,7 @@ a:hover{
 	width:45px;
 	height: 45px;
 }
+
 
 .footer a{
 	color: #000;
